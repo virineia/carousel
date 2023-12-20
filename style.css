@@ -1,140 +1,3 @@
-
-
-.BusinessCarousel {
-    position: relative
-}
-
-.BusinessCarousel__slides {
-    margin: 0 auto;
-    position: relative
-}
-
-.BusinessCarousel__slide {
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    transition: opacity .1s cubic-bezier(.21,.01,.21,.96);
-    width: 100%
-}
-
-.BusinessCarousel__slide--selected {
-    opacity: 1;
-    pointer-events: all;
-    position: relative
-}
-
-.BusinessCarousel__texts {
-    margin: 0 auto;
-    position: relative
-}
-
-.BusinessCarousel__slide-texts {
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    transition: opacity .1s cubic-bezier(.21,.01,.21,.96);
-    width: 100%
-}
-
-.BusinessCarousel__slide-texts--selected {
-    opacity: 1;
-    pointer-events: all;
-    position: relative
-}
-
-.BusinessCarousel__dots {
-    display: flex;
-    justify-content: center;
-    margin: 32px 0
-}
-
-@media(min-width: 768px) {
-    .BusinessCarousel__dots {
-        margin:48px 0 32px
-    }
-}
-
-.BusinessCarousel__dot {
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-block;
-    height: 10px;
-    margin-right: 6px;
-    padding: 0;
-    transition: box-shadow .1s cubic-bezier(.21,.01,.21,.96);
-    width: 10px
-}
-
-.BusinessCarousel__dot--selected {
-    cursor: default
-}
-
-.BusinessCarousel__dot:focus {
-    box-shadow: 0 0 0 2px #240259;
-    outline: none
-}
-
-.BusinessCarousel__slide-title {
-    margin-bottom: 10px;
-    margin-top: 0;
-    text-align: center
-}
-
-.BusinessCarousel__slide-description {
-    margin: 0;
-    text-align: center
-}
-
-.BusinessCarousel__slide-image div {
-    padding-bottom: 0!important
-}
-
-.BusinessCarousel__slide-image img {
-    position: relative
-}
-
-.BusinessCarousel__slides-swipe {
-    background-color: transparent;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%
-}
-
-
-
-
-
-@keyframes slidein {
-    0% {
-        opacity: 0;
-        width: 0
-    }
-
-    to {
-        opacity: 1;
-        width: 192px
-    }
-}
-
-@keyframes slideout {
-    0% {
-        opacity: 1
-    }
-
-    to {
-        opacity: 0
-    }
-}
-
-
-
 .BusinessEditorialFeaturedCarouselContainer {
     display: flex;
     justify-content: center
@@ -199,10 +62,6 @@
     .BusinessEditorialFeaturedCarousel {
         min-height:686px
     }
-}
-
-.BusinessEditorialFeaturedCarousel-appears-first {
-    margin-top: 100px
 }
 
 .BusinessEditorialFeaturedCarousel__paddle {
@@ -286,168 +145,9 @@
     grid-column-start: 1!important
 }
 
-.BusinessEditorialFeaturedHeaderContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%
-}
-
-.BusinessEditorialFeaturedHeader {
-    display: flex;
-    max-height: 740px;
-    max-width: 1920px;
-    width: 100%
-}
-
-@media(min-width: 1024px) {
-    .BusinessEditorialFeaturedHeader {
-        max-height:740px;
-        min-height: 686px
-    }
-}
-
-.BusinessEditorialFeaturedHeader__text {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between
-}
-
-.BusinessEditorialFeaturedHeader__image {
-    height: 100%
-}
-
-.BusinessEditorialFeaturedHeader__section {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1
-}
-
-.BusinessEditorialFeaturedHeader__section.BusinessEditorialFeaturedHeader__image {
-    flex-direction: row
-}
-
-.BusinessEditorialFeaturedHeader__text-section {
-    padding: 20px 16px
-}
-
-.BusinessEditorialFeaturedHeader__text-section-container {
-    flex-grow: 1;
-    height: 100%;
-    text-decoration: none
-}
-
-.BusinessEditorialFeaturedHeader__text--headerText {
-    display: flex
-}
-
-@media(min-width: 1024px)and (max-width:1180px) {
-    .BusinesscolorBusinessEditorialFeaturedHeader__text--headerText--desktop {
-        font-size:44px;
-        line-height: 1.1818181818
-    }
-}
-
-@media(min-width: 1181px) {
-    .BusinesscolorBusinessEditorialFeaturedHeader__text--headerText--desktop {
-        font-size:64px;
-        line-height: 1.125
-    }
-}
-
-.BusinessEditorialFeaturedHeader__step-counter-container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding-top: 28px
-}
-
-.BusinessEditorialFeaturedHeader__step-counter-container--tablet {
-    padding-top: 20px
-}
-
-.BusinessEditorialFeaturedHeader__step-counter-container--phone {
-    padding-top: 12px
-}
-
-.BusinessEditorialFeaturedHeader__step-counter {
-    border-radius: 50%;
-    height: 16px;
-    margin-right: 8px;
-    max-width: 16px;
-    min-width: 16px;
-    opacity: 1;
-    padding: 0;
-    width: 16px
-}
-
-.BusinessEditorialFeaturedHeader__step-counter--unselected {
-    opacity: .2
-}
-
-.BusinessEditorialFeaturedHeader__step-counter--phone {
-    height: 11px;
-    margin-right: 6px;
-    max-width: 11px;
-    min-width: 11px;
-    width: 11px
-}
-
-.BusinessEditorialFeaturedHeader__step-counter:hover {
-    opacity: 1
-}
-
-@media(min-width: 768px) {
-    .BusinessEditorialFeaturedHeader__text-section {
-        padding:20px 38px
-    }
-}
-
-@media(min-width: 1024px) {
-    .BusinessEditorialFeaturedHeader__text-section {
-        padding:40px 72px
-    }
-}
-
-@media screen and (orientation: portrait) {
-    .BusinessEditorialFeaturedHeader {
-        flex-direction:column
-    }
-
-    .BusinessEditorialFeaturedHeader__text-section {
-        flex-direction: column-reverse
-    }
-
-    .BusinessEditorialFeaturedHeader__section {
-        height: 50%
-    }
-}
-
-@media screen and (orientation: landscape) {
-    .BusinessEditorialFeaturedHeader {
-        flex-direction:row
-    }
-
-    .BusinessEditorialFeaturedHeader.BusinessEditorialFeaturedHeader__reverse {
-        flex-direction: row-reverse
-    }
-
-    .BusinessEditorialFeaturedHeader__section {
-        width: 50%
-    }
-
-    .BusinessEditorialFeaturedHeader__text-section-multiple {
-        padding-bottom: 0
-    }
-}
-
 .BusinessText {
     text-align: left
 }
-
-
 
 .BusinessTwoColumnSection {
     margin: 0 auto;
@@ -516,7 +216,6 @@
         margin-left: 100px
     }
 }
-
 
 @media(min-width: 768px) {
     .BusinessWideImage {
@@ -644,10 +343,6 @@
         font-size: 24px;
         line-height: 130%
     }
-
-
-
-
 
 .BusinessImage div {
     padding: 0!important
